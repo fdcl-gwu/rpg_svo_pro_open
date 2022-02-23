@@ -1,0 +1,49 @@
+label: "FDCL"
+id: 412eab8e4058621f7036b5e765dfe812
+cameras:
+- camera:
+    label: cam0
+    id: 54812562fa109c40fe90b29a59dd7798
+    line-delay-nanoseconds: 0
+    image_height: 480
+    image_width: 640
+    type: pinhole
+    intrinsics:
+      cols: 1
+      rows: 4
+      data: [650.6455313741618, 649.9183704713573, 314.6978302224741, 210.07738577448654]
+    distortion:
+      type: radial-tangential  
+      parameters:
+        cols: 1
+        rows: 4
+        data: [-0.41914774721725157, 0.20823226838098885, 2.0304866764865198e-05, 0.0026737497418571473]
+  T_B_C:
+    cols: 4
+    rows: 4
+    data: [-0.03887514, -0.25379083, -0.96647759, -0.03862111,
+0.99868445,  0.02249769, -0.04607836, -0.02309968,
+0.03343778, -0.96699745,  0.25258235,  0.05079752,
+           0.0, 0.0, 0.0, 1.0]
+
+imu_params:
+  delay_imu_cam: 0.0
+  max_imu_delta_t: 0.01
+  acc_max: 176.0
+  omega_max: 17
+  sigma_omega_c: 12.0e-4
+  sigma_acc_c: 8.0e-3
+  sigma_omega_bias_c: 0.03
+  sigma_acc_bias_c: 0.1
+  sigma_integration: 0.0
+  g: 10.03
+  imu_rate: 100
+
+imu_initialization:
+  velocity: [0.0, 0, 0.0]
+  omega_bias: [0.0, 0, 0.0]
+  acc_bias: [0.0, 0.0, 0.0]
+  velocity_sigma: 2.0
+  omega_bias_sigma: 0.01
+  acc_bias_sigma: 0.1
+
