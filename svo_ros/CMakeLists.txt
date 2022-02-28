@@ -6,6 +6,8 @@ find_package(rostest REQUIRED)
 catkin_simple()
 find_package(OpenCV 3.2 REQUIRED)
 
+set (CMAKE_CXX_STANDARD 14)
+
 set(USE_GTSAM false)
 include(SvoSetup)
 if(USE_GLOBAL_MAP OR USE_GTSAM)
