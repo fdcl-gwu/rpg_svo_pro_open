@@ -78,7 +78,7 @@ mkdir svo_ws && cd svo_ws
 # see below for the reason for specifying the eigen path
 catkin config --init --mkdirs --extend /opt/ros/melodic --cmake-args -DCMAKE_BUILD_TYPE=Release -DEIGEN3_INCLUDE_DIR=/usr/include/eigen3
 cd src
-git clone git@github.com:fdcl-uav/rpg_svo_pro_open.git
+git clone git@github.com:fdcl-gwu/rpg_svo_pro_open.git
 vcs-import < ./rpg_svo_pro_open/dependencies.yaml
 touch minkindr/minkindr_python/CATKIN_IGNORE
 # vocabulary for place recognition
