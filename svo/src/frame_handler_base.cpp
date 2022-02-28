@@ -249,7 +249,11 @@ bool FrameHandlerBase::addFrameBundle(const FrameBundlePtr& frame_bundle)
       imu_handler_->getMeasurements(last_t_sec, cur_t_sec, false,
                                     imu_meas_since_last);
     }
-    global_map_->accumulateIMUMeasurements(imu_meas_since_last);
+
+    if (!imu_meas_since_last.empty())
+    {
+        global_map_->accumulateIMUMeasurements(imu_meas_since_last);
+    }
   }
 #endif
 
